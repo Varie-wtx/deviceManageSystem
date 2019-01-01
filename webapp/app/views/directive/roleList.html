@@ -1,0 +1,6 @@
+<!-- this is yunzhiTeacherList.html -->
+<label for="roleId" class="col-sm-2 control-label">角色</label>
+<div class="col-sm-10">
+    <select name="name" id="roleId" ng-options="_role.rolename for _role in roles track by _role.id"
+            ng-model="data.role"></select>
+</div>

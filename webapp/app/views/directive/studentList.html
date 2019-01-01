@@ -1,0 +1,6 @@
+<!-- this is yunzhiTeacherList.html -->
+<label for="studentId" class="col-sm-2 control-label">学生Id</label>
+<div class="col-sm-10">
+    <select name="studentId" id="studentId" ng-options="_student.id for _student in students track by _student.id"
+            ng-model="data.user"></select>
+</div>

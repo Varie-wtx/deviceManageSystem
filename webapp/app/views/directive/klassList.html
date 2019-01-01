@@ -1,0 +1,6 @@
+<!-- this is yunzhiTeacherList.html -->
+<label for="klassId" class="col-sm-2 control-label">班级列表</label>
+<div class="col-sm-10">
+    <select name="klassId" id="klassId" ng-options="_klass.name for _klass in klasses track by _klass.id"
+            ng-model="data.klass"></select>
+</div>

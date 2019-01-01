@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-8 col-lg-offset-2" style="margin-top: 50px;">
+        <form class="form-horizontal" ng-submit="submit()">
+
+            <div class="form-group">
+                <label for="type" class="col-sm-2 control-label">传感器类型</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.type" class="form-control" id="type" placeholder="传感器类型">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sensorId" class="col-sm-2 control-label">传感器编号</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.sensorId" class="form-control" id="sensorId" placeholder="传感器编号">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

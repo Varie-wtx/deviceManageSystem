@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.css" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/angular-toggle-switch/angular-toggle-switch.css" />
+    <link rel="stylesheet" href="bower_components/c3/c3.css" />
+    <!-- endbower -->
+
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sb-admin-2.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- endbuild -->
+
+</head>
+<body ng-app="webappApp">
+
+
+<ui-view></ui-view>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+    !function (A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+            (A[l].q = A[l].q || []).push(arguments)
+        }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
+<script src="bower_components/es6-shim/es6-shim.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/c3/c3.js"></script>
+<script src="bower_components/angular-chart/angular-chart.js"></script>
+<script src="bower_components/chart.js/dist/Chart.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<!-- endbower -->
+
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/teacher/add.js"></script>
+<script src="scripts/controllers/term/index.js"></script>
+<script src="scripts/controllers/term/add.js"></script>
+<script src="scripts/controllers/course/index.js"></script>
+<script src="scripts/controllers/teacher/index.js"></script>
+<script src="scripts/controllers/teacher/edit.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/services/teacher.js"></script>
+<script src="scripts/controllers/user/index.js"></script>
+<script src="scripts/services/user.js"></script>
+<script src="scripts/controllers/user/edit.js"></script>
+<script src="scripts/controllers/user/add.js"></script>
+<script src="scripts/directives/yunzhisize.js"></script>
+<script src="scripts/directives/yunzhipage.js"></script>
+<script src="scripts/directives/sidebar/sidebar.js"></script>
+<script src="scripts/filters/yunzhisex.js"></script>
+<script src="scripts/controllers/student/add.js"></script>
+<script src="scripts/controllers/student/index.js"></script>
+<script src="scripts/controllers/student/course.js"></script>
+<script src="scripts/controllers/student/edit.js"></script>
+<script src="scripts/services/student.js"></script>
+<script src="scripts/controllers/course/add.js"></script>
+<script src="scripts/controllers/course/edit.js"></script>
+<script src="scripts/controllers/term/edit.js"></script>
+<script src="scripts/directives/userlist.js"></script>
+<script src="scripts/directives/personalcenter.js"></script>
+<script src="scripts/controllers/student/course.js"></script>
+<script src="scripts/controllers/student/addcourse.js"></script>
+<script src="scripts/controllers/student/editcourse.js"></script>
+<script src="scripts/directives/studentlist.js"></script>
+<script src="scripts/directives/klasslist.js"></script>
+<script src="scripts/services/klass.js"></script>
+<script src="scripts/controllers/klass/add.js"></script>
+<script src="scripts/controllers/klass/edit.js"></script>
+<script src="scripts/controllers/klass/index.js"></script>
+<script src="scripts/controllers/teacher/course.js"></script>
+<script src="scripts/controllers/teacher/addcourse.js"></script>
+<script src="scripts/controllers/teacher/editcourse.js"></script>
+<script src="scripts/directives/teacherlist.js"></script>
+<script src="scripts/directives/rolelist.js"></script>
+<script src="scripts/services/role.js"></script>
+<script src="scripts/controllers/role/index.js"></script>
+<script src="scripts/controllers/role/add.js"></script>
+<script src="scripts/controllers/role/edit.js"></script>
+<script src="scripts/controllers/device/edit.js"></script>
+<script src="scripts/controllers/device/add.js"></script>
+<script src="scripts/controllers/device/index.js"></script>
+<script src="scripts/services/device.js"></script>
+<script src="scripts/controllers/realtimedata/index.js"></script>
+<script src="scripts/controllers/historicaldata/index.js"></script>
+<script src="scripts/services/power.js"></script>
+<script src="scripts/controllers/sensor/index.js"></script>
+<script src="scripts/controllers/sensor/add.js"></script>
+<script src="scripts/controllers/sensor/edit.js"></script>
+<script src="scripts/services/sensor.js"></script>
+<script src="scripts/directives/sensorlist.js"></script>
+<!-- endbuild -->
+</body>
+</html>
