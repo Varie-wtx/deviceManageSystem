@@ -1,10 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="row">
+    <div class="col-md-8 col-lg-offset-2" style="margin-top: 50px;">
+        <form class="form-horizontal" ng-submit="submit()">
+            <div class="form-group">
+                <label for="gatewayId" class="col-sm-2 control-label">网关ID</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.gatewayId" class="form-control" id="gatewayId" placeholder="网关ID">
+                </div>
+            </div>
 
-</body>
-</html>
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">网关名称</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.name" class="form-control" id="name" placeholder="网关名称">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="gatewayMac" class="col-sm-2 control-label">网关MAC</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.gatewayMac" class="form-control" id="gatewayMac"
+                           placeholder="网关MAC">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <gateway-list></gateway-list>
+            </div>
+
+            <div class="form-group">
+                <label for="offnetTime" class="col-sm-2 control-label">离线判断周期</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="data.offnetTime" class="form-control" id="offnetTime"
+                           placeholder="离线判断周期">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">在线判断依据</label>
+                <div class="col-sm-10">
+                    <input type="radio" id="huey" name="drone" value="huey"
+                           checked>
+                    <label for="huey">心跳数据包</label>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="dewey">普通数据包</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -37,15 +37,29 @@
                         <thead>
                         <tr>
                             <th>序号</th>
-                            <th>传感器类别</th>
-                            <th>传感器编号</th>
+                            <th>网关名称</th>
+                            <th>节点PID</th>
+                            <th>通道号</th>
+                            <th>传感器名称</th>
+                            <th>数据类型</th>
+                            <th>最新数据</th>
+                            <th>最后更新</th>
+                            <th>在线情况</th>
+                            <th>状态</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr class="gradeA" ng-repeat="_list in lists| orderBy: '-id'" ng-hide="_list._delete">
                             <td>{{_list.id}}</td>
+                            <td>{{_list.id}}</td>
                             <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.sensorId}}</td>
                             <td>{{_list.sensorId}}</td>
                             <td class="center">
                                 <a type="button" class="btn btn-default" href="#!/sensor/edit/{{_list.id}}">编辑</a>

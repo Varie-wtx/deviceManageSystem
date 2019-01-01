@@ -1,7 +1,7 @@
 <div>
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">网关管理</h1>
+            <h1 class="page-header">执行器管理</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-2 col-lg-offset-7">
             <div class="text-left">
-                <a class="btn btn-info" href="#!/gateway/add" role="button"><i class="fa fa"></i>添加网关</a>
+                <a class="btn btn-info" href="#!/actuator/add" role="button"><i class="fa fa"></i>添加执行器</a>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                网关管理表
+                执行器管理表
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -38,27 +38,29 @@
                         <tr>
                             <th>序号</th>
                             <th>网关名称</th>
-                            <th>网关ID</th>
-                            <th>MAC</th>
-                            <th>网关类型</th>
-                            <th>离线判断周期</th>
+                            <th>节点PID</th>
+                            <th>通道号</th>
+                            <th>执行器名称</th>
+                            <th>最新值</th>
+                            <th>最后更新</th>
                             <th>在线情况</th>
                             <th>状态</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="gradeA">
-                            <td>1</td>
-                            <td>摄像头</td>
-                            <td>类别1</td>
-                            <td>教学楼</td>
-                            <td>正常运行</td>
-                            <td>2018-9-10</td>
-                            <td class="center">计算机</td>
-                            <td class="center">计算机</td>
+                        <tr class="gradeA" ng-repeat="_list in lists| orderBy: '-id'" ng-hide="_list._delete">
+                            <td>{{_list.id}}</td>
+                            <td>{{_list.id}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.type}}</td>
+                            <td>{{_list.sensorId}}</td>
+                            <td>{{_list.sensorId}}</td>
                             <td class="center">
-                                <a type="button" class="btn btn-default" href="#!/gateway/edit/{{_list.id}}">编辑</a>
+                                <a type="button" class="btn btn-default" href="#!/actuator/edit/{{_list.id}}">编辑</a>
                                 <button ng-click="delete(_list)" class="btn btn-danger">删除</button>
                             </td>
                         </tr>

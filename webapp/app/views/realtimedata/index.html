@@ -6,21 +6,20 @@
         <!-- /.col-lg-12 -->
     </div>
     <div class="row">
-        <div class="col-lg-3">
-            <div class="input-group custom-search-form text-left">
-                <input type="text" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-                <i class="fa fa-search"></i>
-            </button>
-        </span>
+        <div class="col-lg-6">
+
+            <div class="custom-search-form text-left">
+                <label for="klassId" class="col-lg-2 control-label">网关名称</label>
+                <select name="klassId" id="klassId"
+                        ng-options="_klass.name for _klass in klasses track by _klass.id"
+                        ng-model="data.klass"></select>
             </div>
         </div>
-        <!--<div class="col-lg-2 col-lg-offset-7">-->
-            <!--<div class="text-left">-->
-                <!--<a class="btn btn-info" href="#!/device/add" role="button"><i class="fa fa"></i>添加设备</a>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="col-lg-2 col-lg-offset-4">
+            <div class="text-left">
+                <a class="btn btn-info" role="button"><i class="fa fa"></i>查询</a>
+            </div>
+        </div>
     </div>
 </div>
 <hr>
@@ -28,7 +27,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <!--<div class="panel-heading">-->
-                <!--网关管理表-->
+            <!--网关管理表-->
             <!--</div>-->
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -55,10 +54,8 @@
                             <td>正常运行</td>
                             <td>2018-9-10</td>
                             <td class="center">计算机</td>
-                            <td class="center">
-                                <a type="button" class="btn btn-default" href="#!/device/edit/{{_list.id}}">编辑</a>
-                                <button ng-click="delete(_list)" class="btn btn-danger">删除</button>
-                            </td>
+                            <td class="center">计算机</td>
+
                         </tr>
                         </tbody>
                     </table>
