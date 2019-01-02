@@ -5,6 +5,8 @@ import com.shebiejiance.repository.SensorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class SensorServiceImpl implements SensorService {
     @Autowired
@@ -20,7 +22,13 @@ public class SensorServiceImpl implements SensorService {
     }
 
     @Override
+    public void add(Sensor sensor) {
+        sensorRepository.save(sensor);
+    }
+
+    @Override
     public void delete(Long id) {
        sensorRepository.delete(id);
     }
+
 }
