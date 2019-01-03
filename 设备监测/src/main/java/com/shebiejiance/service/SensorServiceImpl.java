@@ -15,8 +15,8 @@ public class SensorServiceImpl implements SensorService {
     @Override
     public void update(Long id, Sensor newSensor) {
         Sensor oldSensor = sensorRepository.findOne(id);
-        oldSensor.setType(newSensor.getType());
-        oldSensor.setSensorId(newSensor.getSensorId());
+        oldSensor.setName(newSensor.getName());
+        oldSensor.setNodeId(newSensor.getNodeId());
         // 更新数据表
         sensorRepository.save(oldSensor);
     }

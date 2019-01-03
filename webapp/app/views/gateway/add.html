@@ -1,10 +1,11 @@
 <div class="row">
     <div class="col-md-8 col-lg-offset-2" style="margin-top: 50px;">
         <form class="form-horizontal" ng-submit="submit()">
+            <pre>{{data}}</pre>
             <div class="form-group">
                 <label for="gatewayId" class="col-sm-2 control-label">网关ID</label>
                 <div class="col-sm-10">
-                    <input type="text" ng-model="data.gatewayId" class="form-control" id="gatewayId" placeholder="网关ID">
+                    <input type="text" ng-model="data.id" class="form-control" id="gatewayId" placeholder="网关ID">
                 </div>
             </div>
 
@@ -16,9 +17,9 @@
             </div>
 
             <div class="form-group">
-                <label for="gatewayMac" class="col-sm-2 control-label">网关MAC</label>
+                <label for="macAddress" class="col-sm-2 control-label">网关MAC</label>
                 <div class="col-sm-10">
-                    <input type="text" ng-model="data.gatewayMac" class="form-control" id="gatewayMac"
+                    <input type="text" ng-model="data.macAddress" class="form-control" id="macAddress"
                            placeholder="网关MAC">
                 </div>
             </div>
@@ -29,9 +30,9 @@
             </div>
 
             <div class="form-group">
-                <label for="offnetTime" class="col-sm-2 control-label">离线判断周期</label>
+                <label for="lixianJudgeTime" class="col-sm-2 control-label">离线判断周期</label>
                 <div class="col-sm-10">
-                    <input type="text" ng-model="data.offnetTime" class="form-control" id="offnetTime"
+                    <input type="text" ng-model="data.lixianJudgeTime" class="form-control" id="lixianJudgeTime"
                            placeholder="离线判断周期">
                 </div>
             </div>

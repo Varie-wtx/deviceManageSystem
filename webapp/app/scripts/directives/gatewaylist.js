@@ -9,9 +9,9 @@
 angular.module('webappApp')
   .directive('gatewayList', function (gateway) {
       var self = {};
-      self.getAllGateways = function($scope){
-          gateway.getAllGateways(function(gateways) {
-              $scope.gateways = gateways;
+      self.getAllGateTypes = function($scope){
+          gateway.getAllGateTypes(function(gatewayTypes) {
+              $scope.gatewayTypes = gatewayTypes;
           });
       };
 
@@ -19,7 +19,7 @@ angular.module('webappApp')
           templateUrl: 'views/directive/gatewayList.html',
           restrict: 'E',
           link: function postLink($scope) {
-              self.getAllGateways($scope);
+              self.getAllGateTypes($scope);
           }
       };
   });

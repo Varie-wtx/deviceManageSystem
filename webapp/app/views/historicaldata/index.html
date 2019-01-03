@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <label>时间段</label>
-                                从 <input type="text">到 <input type="text">
+                                从 <input type="text" style="width:150px;">到 <input type="text" style="width:150px;">
                             </div>
                             <div class="col-lg-2 col-lg-offset-1">
                                 <div class="text-left">
@@ -85,10 +85,7 @@
                     <div class="tab-panel" ng-show="vm.activeTab == 2">
                         <div class="row" style="margin-top: 10px">
                             <div class="col-lg-1">
-                                <label for="gateway1" class="control-label">网关</label>
-                                <select name="klassId" id="gateway1"
-                                        ng-options="_klass.name for _klass in klasses track by _klass.id"
-                                        ng-model="data.klass"></select>
+                                <gateway-name-list></gateway-name-list>
                             </div>
                             <div class="col-lg-1">
                                 <label for="node1" class="control-label">结点</label>
@@ -97,10 +94,7 @@
                                         ng-model="data.klass"></select>
                             </div>
                             <div class="col-lg-2">
-                                <label for="sensor1" class="control-label">执行器</label>
-                                <select name="klassId" id="sensor1"
-                                        ng-options="_klass.name for _klass in klasses track by _klass.id"
-                                        ng-model="data.klass"></select>
+                                <sensor-list></sensor-list>
                             </div>
                             <div class="col-lg-5">
                                 <label>时间段</label>

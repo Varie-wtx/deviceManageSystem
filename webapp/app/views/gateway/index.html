@@ -48,15 +48,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="gradeA">
-                            <td>1</td>
-                            <td>摄像头</td>
-                            <td>类别1</td>
-                            <td>教学楼</td>
-                            <td>正常运行</td>
-                            <td>2018-9-10</td>
-                            <td class="center">计算机</td>
-                            <td class="center">计算机</td>
+                        <tr class="gradeA" ng-repeat="_list in lists | orderBy: '-id'" ng-hide="_list._delete">
+                            <td>{{$index+1}}</td>
+                            <th>{{_list.name}}</th>
+                            <th>{{_list.id}}</th>
+                            <th>{{_list.macAddress}}</th>
+                            <th>{{_list.gatewayType.name}}</th>
+                            <th>{{_list.lixianJudgeTime}}</th>
+                            <th>{{_list.onlineDescription}}</th>
+                            <th>{{_list.status}}</th>
                             <td class="center">
                                 <a type="button" class="btn btn-default" href="#!/gateway/edit/{{_list.id}}">编辑</a>
                                 <button ng-click="delete(_list)" class="btn btn-danger">删除</button>

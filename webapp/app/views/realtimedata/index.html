@@ -9,10 +9,7 @@
         <div class="col-lg-6">
 
             <div class="custom-search-form text-left">
-                <label for="klassId" class="col-lg-2 control-label">网关名称</label>
-                <select name="klassId" id="klassId"
-                        ng-options="_klass.name for _klass in klasses track by _klass.id"
-                        ng-model="data.klass"></select>
+                <gateway-list></gateway-list>
             </div>
         </div>
         <div class="col-lg-2 col-lg-offset-4">

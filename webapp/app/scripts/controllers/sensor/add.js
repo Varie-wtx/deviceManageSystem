@@ -13,8 +13,10 @@ angular.module('webappApp')
 
       self.init = function () {
           $scope.data = {
-              type: '',
-              sensorId:0
+              name:'',
+              gateway:{},
+              nodeId:'',
+              channelId:''
           };
       };
 

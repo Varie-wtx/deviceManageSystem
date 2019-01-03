@@ -52,15 +52,15 @@
                         <tbody>
                         <tr class="gradeA" ng-repeat="_list in lists| orderBy: '-id'" ng-hide="_list._delete">
                             <td>{{_list.id}}</td>
-                            <td>{{_list.id}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.type}}</td>
-                            <td>{{_list.sensorId}}</td>
-                            <td>{{_list.sensorId}}</td>
+                            <td>{{_list.gateway.name}}</td>
+                            <td>{{_list.nodeId}}</td>
+                            <td>{{_list.channelId}}</td>
+                            <td>{{_list.dataType}}</td>
+                            <td>{{_list.name}}</td>
+                            <td>{{_list.dataType}}</td>
+                            <td>{{_list.dataType}}</td>
+                            <td>{{_list.dataType}}</td>
+                            <td>{{_list.dataType}}</td>
                             <td class="center">
                                 <a type="button" class="btn btn-default" href="#!/sensor/edit/{{_list.id}}">编辑</a>
                                 <button ng-click="delete(_list)" class="btn btn-danger">删除</button>
